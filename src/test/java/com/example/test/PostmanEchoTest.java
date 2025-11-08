@@ -17,7 +17,7 @@ public class PostmanEchoTest {
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("some data")); // Проверяем, что поле data равно отправленным данным
+                .body("wrongFiead", equalTo("some data")); // Проверяем, что поле data равно отправленным данным
     }
 }
 
